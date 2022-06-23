@@ -131,28 +131,52 @@
   {
     "inputs": [],
     "name": "FILLED_ORDER",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "RFQ_LIMIT_NFT_ORDER_TYPEHASH",
-    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "RFQ_LIMIT_ORDER_TYPEHASH",
-    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "UNFILLED_ORDER",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -182,8 +206,16 @@
                 "name": "takerAsset",
                 "type": "address"
               },
-              { "internalType": "address", "name": "maker", "type": "address" },
-              { "internalType": "address", "name": "taker", "type": "address" },
+              {
+                "internalType": "address",
+                "name": "maker",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "taker",
+                "type": "address"
+              },
               {
                 "internalType": "uint256",
                 "name": "makerAmount",
@@ -199,7 +231,11 @@
             "name": "order",
             "type": "tuple"
           },
-          { "internalType": "bytes", "name": "signature", "type": "bytes" },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          },
           {
             "internalType": "uint256",
             "name": "takerTokenFillAmount",
@@ -220,7 +256,11 @@
         "name": "orderInfos",
         "type": "tuple[]"
       },
-      { "internalType": "address", "name": "target", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
     ],
     "name": "batchFillOrderWithTarget",
     "outputs": [],
@@ -263,8 +303,16 @@
                 "name": "takerAssetId",
                 "type": "uint256"
               },
-              { "internalType": "address", "name": "maker", "type": "address" },
-              { "internalType": "address", "name": "taker", "type": "address" },
+              {
+                "internalType": "address",
+                "name": "maker",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "taker",
+                "type": "address"
+              },
               {
                 "internalType": "uint256",
                 "name": "makerAmount",
@@ -280,7 +328,11 @@
             "name": "order",
             "type": "tuple"
           },
-          { "internalType": "bytes", "name": "signature", "type": "bytes" },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          },
           {
             "internalType": "uint256",
             "name": "takerTokenFillAmount",
@@ -301,7 +353,11 @@
         "name": "orderInfos",
         "type": "tuple[]"
       },
-      { "internalType": "address", "name": "target", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
     ],
     "name": "batchFillOrderWithTargetNFT",
     "outputs": [],
@@ -310,7 +366,11 @@
   },
   {
     "inputs": [
-      { "internalType": "bytes32", "name": "orderHash", "type": "bytes32" }
+      {
+        "internalType": "bytes32",
+        "name": "orderHash",
+        "type": "bytes32"
+      }
     ],
     "name": "cancelOrder",
     "outputs": [],
@@ -339,7 +399,11 @@
             "name": "nonceAndMeta",
             "type": "uint256"
           },
-          { "internalType": "uint128", "name": "expiry", "type": "uint128" },
+          {
+            "internalType": "uint128",
+            "name": "expiry",
+            "type": "uint128"
+          },
           {
             "internalType": "address",
             "name": "makerAsset",
@@ -350,8 +414,16 @@
             "name": "takerAsset",
             "type": "address"
           },
-          { "internalType": "address", "name": "maker", "type": "address" },
-          { "internalType": "address", "name": "taker", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
           {
             "internalType": "uint256",
             "name": "makerAmount",
@@ -367,7 +439,11 @@
         "name": "order",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "signature", "type": "bytes" }
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      }
     ],
     "name": "fillOrder",
     "outputs": [],
@@ -383,7 +459,11 @@
             "name": "nonceAndMeta",
             "type": "uint256"
           },
-          { "internalType": "uint128", "name": "expiry", "type": "uint128" },
+          {
+            "internalType": "uint128",
+            "name": "expiry",
+            "type": "uint128"
+          },
           {
             "internalType": "uint256",
             "name": "makerAsset",
@@ -404,8 +484,16 @@
             "name": "takerAssetId",
             "type": "uint256"
           },
-          { "internalType": "address", "name": "maker", "type": "address" },
-          { "internalType": "address", "name": "taker", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
           {
             "internalType": "uint256",
             "name": "makerAmount",
@@ -421,7 +509,11 @@
         "name": "order",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "signature", "type": "bytes" }
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      }
     ],
     "name": "fillOrderNFT",
     "outputs": [],
@@ -437,7 +529,11 @@
             "name": "nonceAndMeta",
             "type": "uint256"
           },
-          { "internalType": "uint128", "name": "expiry", "type": "uint128" },
+          {
+            "internalType": "uint128",
+            "name": "expiry",
+            "type": "uint128"
+          },
           {
             "internalType": "address",
             "name": "makerAsset",
@@ -448,8 +544,16 @@
             "name": "takerAsset",
             "type": "address"
           },
-          { "internalType": "address", "name": "maker", "type": "address" },
-          { "internalType": "address", "name": "taker", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
           {
             "internalType": "uint256",
             "name": "makerAmount",
@@ -465,8 +569,16 @@
         "name": "order",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "signature", "type": "bytes" },
-      { "internalType": "address", "name": "target", "type": "address" }
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      },
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
     ],
     "name": "fillOrderWithTarget",
     "outputs": [],
@@ -482,7 +594,11 @@
             "name": "nonceAndMeta",
             "type": "uint256"
           },
-          { "internalType": "uint128", "name": "expiry", "type": "uint128" },
+          {
+            "internalType": "uint128",
+            "name": "expiry",
+            "type": "uint128"
+          },
           {
             "internalType": "uint256",
             "name": "makerAsset",
@@ -503,8 +619,16 @@
             "name": "takerAssetId",
             "type": "uint256"
           },
-          { "internalType": "address", "name": "maker", "type": "address" },
-          { "internalType": "address", "name": "taker", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
           {
             "internalType": "uint256",
             "name": "makerAmount",
@@ -520,8 +644,16 @@
         "name": "order",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "signature", "type": "bytes" },
-      { "internalType": "address", "name": "target", "type": "address" }
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      },
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
     ],
     "name": "fillOrderWithTargetNFT",
     "outputs": [],
@@ -530,7 +662,11 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "maker", "type": "address" },
+      {
+        "internalType": "address",
+        "name": "maker",
+        "type": "address"
+      },
       {
         "internalType": "bytes32[]",
         "name": "orderHashes",
@@ -557,7 +693,11 @@
             "name": "nonceAndMeta",
             "type": "uint256"
           },
-          { "internalType": "uint128", "name": "expiry", "type": "uint128" },
+          {
+            "internalType": "uint128",
+            "name": "expiry",
+            "type": "uint128"
+          },
           {
             "internalType": "address",
             "name": "makerAsset",
@@ -568,8 +708,16 @@
             "name": "takerAsset",
             "type": "address"
           },
-          { "internalType": "address", "name": "maker", "type": "address" },
-          { "internalType": "address", "name": "taker", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
           {
             "internalType": "uint256",
             "name": "makerAmount",
@@ -585,7 +733,11 @@
         "name": "order",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "signature", "type": "bytes" },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      },
       {
         "internalType": "uint256",
         "name": "takerTokenFillAmount",
@@ -612,7 +764,11 @@
             "name": "nonceAndMeta",
             "type": "uint256"
           },
-          { "internalType": "uint128", "name": "expiry", "type": "uint128" },
+          {
+            "internalType": "uint128",
+            "name": "expiry",
+            "type": "uint128"
+          },
           {
             "internalType": "uint256",
             "name": "makerAsset",
@@ -633,8 +789,16 @@
             "name": "takerAssetId",
             "type": "uint256"
           },
-          { "internalType": "address", "name": "maker", "type": "address" },
-          { "internalType": "address", "name": "taker", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
           {
             "internalType": "uint256",
             "name": "makerAmount",
@@ -650,7 +814,11 @@
         "name": "order",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "signature", "type": "bytes" },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      },
       {
         "internalType": "uint256",
         "name": "takerTokenFillAmount",
@@ -677,7 +845,11 @@
             "name": "nonceAndMeta",
             "type": "uint256"
           },
-          { "internalType": "uint128", "name": "expiry", "type": "uint128" },
+          {
+            "internalType": "uint128",
+            "name": "expiry",
+            "type": "uint128"
+          },
           {
             "internalType": "address",
             "name": "makerAsset",
@@ -688,8 +860,16 @@
             "name": "takerAsset",
             "type": "address"
           },
-          { "internalType": "address", "name": "maker", "type": "address" },
-          { "internalType": "address", "name": "taker", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
           {
             "internalType": "uint256",
             "name": "makerAmount",
@@ -705,13 +885,21 @@
         "name": "order",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "signature", "type": "bytes" },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      },
       {
         "internalType": "uint256",
         "name": "takerTokenFillAmount",
         "type": "uint256"
       },
-      { "internalType": "address", "name": "target", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
     ],
     "name": "partialFillOrderWithTarget",
     "outputs": [
@@ -733,7 +921,11 @@
             "name": "nonceAndMeta",
             "type": "uint256"
           },
-          { "internalType": "uint128", "name": "expiry", "type": "uint128" },
+          {
+            "internalType": "uint128",
+            "name": "expiry",
+            "type": "uint128"
+          },
           {
             "internalType": "uint256",
             "name": "makerAsset",
@@ -754,8 +946,16 @@
             "name": "takerAssetId",
             "type": "uint256"
           },
-          { "internalType": "address", "name": "maker", "type": "address" },
-          { "internalType": "address", "name": "taker", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
           {
             "internalType": "uint256",
             "name": "makerAmount",
@@ -771,13 +971,21 @@
         "name": "order",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "signature", "type": "bytes" },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      },
       {
         "internalType": "uint256",
         "name": "takerTokenFillAmount",
         "type": "uint256"
       },
-      { "internalType": "address", "name": "target", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
     ],
     "name": "partialFillOrderWithTargetNFT",
     "outputs": [
@@ -799,7 +1007,11 @@
             "name": "nonceAndMeta",
             "type": "uint256"
           },
-          { "internalType": "uint128", "name": "expiry", "type": "uint128" },
+          {
+            "internalType": "uint128",
+            "name": "expiry",
+            "type": "uint128"
+          },
           {
             "internalType": "address",
             "name": "makerAsset",
@@ -810,8 +1022,16 @@
             "name": "takerAsset",
             "type": "address"
           },
-          { "internalType": "address", "name": "maker", "type": "address" },
-          { "internalType": "address", "name": "taker", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
           {
             "internalType": "uint256",
             "name": "makerAmount",
@@ -827,15 +1047,31 @@
         "name": "order",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "signature", "type": "bytes" },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      },
       {
         "internalType": "uint256",
         "name": "takerTokenFillAmount",
         "type": "uint256"
       },
-      { "internalType": "address", "name": "target", "type": "address" },
-      { "internalType": "bytes", "name": "permitTakerAsset", "type": "bytes" },
-      { "internalType": "bytes", "name": "permitMakerAsset", "type": "bytes" }
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "permitTakerAsset",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "permitMakerAsset",
+        "type": "bytes"
+      }
     ],
     "name": "partialFillOrderWithTargetPermit",
     "outputs": [
@@ -857,7 +1093,11 @@
             "name": "nonceAndMeta",
             "type": "uint256"
           },
-          { "internalType": "uint128", "name": "expiry", "type": "uint128" },
+          {
+            "internalType": "uint128",
+            "name": "expiry",
+            "type": "uint128"
+          },
           {
             "internalType": "uint256",
             "name": "makerAsset",
@@ -878,8 +1118,16 @@
             "name": "takerAssetId",
             "type": "uint256"
           },
-          { "internalType": "address", "name": "maker", "type": "address" },
-          { "internalType": "address", "name": "taker", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
           {
             "internalType": "uint256",
             "name": "makerAmount",
@@ -895,15 +1143,31 @@
         "name": "order",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "signature", "type": "bytes" },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      },
       {
         "internalType": "uint256",
         "name": "takerTokenFillAmount",
         "type": "uint256"
       },
-      { "internalType": "address", "name": "target", "type": "address" },
-      { "internalType": "bytes", "name": "permitTakerAsset", "type": "bytes" },
-      { "internalType": "bytes", "name": "permitMakerAsset", "type": "bytes" }
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "permitTakerAsset",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "permitMakerAsset",
+        "type": "bytes"
+      }
     ],
     "name": "partialFillOrderWithTargetPermitNFT",
     "outputs": [
@@ -918,11 +1182,25 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "", "type": "address" },
-      { "internalType": "bytes32", "name": "", "type": "bytes32" }
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
     ],
     "name": "remaining",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -952,8 +1230,16 @@
                 "name": "takerAsset",
                 "type": "address"
               },
-              { "internalType": "address", "name": "maker", "type": "address" },
-              { "internalType": "address", "name": "taker", "type": "address" },
+              {
+                "internalType": "address",
+                "name": "maker",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "taker",
+                "type": "address"
+              },
               {
                 "internalType": "uint256",
                 "name": "makerAmount",
@@ -969,7 +1255,11 @@
             "name": "order",
             "type": "tuple"
           },
-          { "internalType": "bytes", "name": "signature", "type": "bytes" },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          },
           {
             "internalType": "uint256",
             "name": "takerTokenFillAmount",
@@ -995,7 +1285,11 @@
         "name": "makerFillAmount",
         "type": "uint256"
       },
-      { "internalType": "address", "name": "target", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
     ],
     "name": "tryBatchFillOrderMakerAmount",
     "outputs": [],
@@ -1028,8 +1322,16 @@
                 "name": "takerAsset",
                 "type": "address"
               },
-              { "internalType": "address", "name": "maker", "type": "address" },
-              { "internalType": "address", "name": "taker", "type": "address" },
+              {
+                "internalType": "address",
+                "name": "maker",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "taker",
+                "type": "address"
+              },
               {
                 "internalType": "uint256",
                 "name": "makerAmount",
@@ -1045,7 +1347,11 @@
             "name": "order",
             "type": "tuple"
           },
-          { "internalType": "bytes", "name": "signature", "type": "bytes" },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          },
           {
             "internalType": "uint256",
             "name": "takerTokenFillAmount",
@@ -1071,7 +1377,11 @@
         "name": "takerFillAmount",
         "type": "uint256"
       },
-      { "internalType": "address", "name": "target", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
     ],
     "name": "tryBatchFillOrderTakerAmount",
     "outputs": [],
