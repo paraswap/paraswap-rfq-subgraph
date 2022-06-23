@@ -1,13 +1,13 @@
 {
-  "name": "paraswap-rfq-subgraph-mainnet",
+  "name": "paraswap-rfq-subgraph-polygon",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ paraswap/paraswap-rfq-subgraph-mainnet",
-    "create-local": "graph create --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-mainnet",
-    "remove-local": "graph remove --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-mainnet",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 paraswap/paraswap-rfq-subgraph-mainnet"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ paraswap/paraswap-rfq-subgraph-polygon",
+    "create-local": "graph create --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-polygon",
+    "remove-local": "graph remove --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-polygon",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 paraswap/paraswap-rfq-subgraph-polygon"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.31.0",
