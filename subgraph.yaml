@@ -1,4 +1,4 @@
-specVersion: 0.0.1
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -8,20 +8,18 @@ dataSources:
     source:
       address: "0xe92b586627ccA7a83dC919cc7127196d70f55a06"
       abi: AugustusRFQ
+      startBlock: 14853783
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
-        - OrderCancelled
-        - OrderFilled
-        - OrderFilledNFT
+        - FilledOrder
+        - FilledOrderNFT
       abis:
         - name: AugustusRFQ
           file: ./abis/AugustusRFQ.json
       eventHandlers:
-        - event: OrderCancelled(indexed bytes32,indexed address)
-          handler: handleOrderCancelled
         - event: OrderFilled(indexed bytes32,indexed address,address,uint256,indexed address,address,uint256)
           handler: handleOrderFilled
         - event: OrderFilledNFT(indexed bytes32,indexed address,uint256,uint256,uint256,indexed address,uint256,uint256,uint256)

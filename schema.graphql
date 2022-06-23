@@ -1,6 +1,47 @@
-type ExampleEntity @entity {
-  id: ID!
-  count: BigInt!
-  orderHash: Bytes! # bytes32
-  maker: Bytes! # address
+# Limit Order Swaps
+type FilledOrder @entity {
+  id: ID! # txHash + txIndex
+  augustusRFQ: Bytes!
+  augustusRFQVersion: String!
+  orderHash: Bytes!
+  makerAddress: Bytes!
+  makerAsset: Bytes!
+  makerAmount: BigInt!
+  takerAddress: Bytes!
+  takerAsset: Bytes!
+  takerAmount: BigInt!
+  txHash: Bytes!
+  txOrigin: Bytes!
+  txTarget: Bytes
+  txGasLimit: BigInt!
+  txGasPrice: BigInt!
+  blockHash: Bytes!
+  blockNumber: BigInt!
+  timestamp: BigInt!
+}
+
+# NFT Swaps
+type FilledOrderNFT @entity {
+  id: ID! # txHash + txIndex
+  augustusRFQ: Bytes!
+  augustusRFQVersion: String!
+  orderHash: Bytes!
+  makerAddress: Bytes!
+  makerAsset: Bytes!
+  makerAssetType: BigInt!
+  makerAssetId: BigInt!
+  makerAmount: BigInt!
+  takerAddress: Bytes!
+  takerAsset: Bytes!
+  takerAssetType: BigInt!
+  takerAssetId: BigInt!
+  takerAmount: BigInt!
+  txHash: Bytes!
+  txOrigin: Bytes!
+  txTarget: Bytes
+  txGasLimit: BigInt!
+  txGasPrice: BigInt!
+  blockHash: Bytes!
+  blockNumber: BigInt!
+  timestamp: BigInt!
 }
