@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: AugustusRFQ
-    network: matic
+    network: bsc
     source:
-      address: "0xF3CD476C3C4D3Ac5cA2724767f269070CA09A043"
+      address: "0x8DcDfe88EF0351f27437284D0710cD65b20288bb"
       abi: AugustusRFQ
-      startBlock: 28829754
+      startBlock: 18164860
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
