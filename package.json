@@ -1,13 +1,13 @@
 {
-  "name": "paraswap-rfq-subgraph-bsc",
+  "name": "paraswap-rfq-subgraph-avalanche",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ paraswap/paraswap-rfq-subgraph-bsc",
-    "create-local": "graph create --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-bsc",
-    "remove-local": "graph remove --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-bsc",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 paraswap/paraswap-rfq-subgraph-bsc"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ paraswap/paraswap-rfq-subgraph-avalanche",
+    "create-local": "graph create --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-avalanche",
+    "remove-local": "graph remove --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-avalanche",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 paraswap/paraswap-rfq-subgraph-avalanche"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.31.0",

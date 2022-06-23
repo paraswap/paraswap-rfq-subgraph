@@ -3,7 +3,7 @@
 > To read more about Paraswap, visit the official documentaion page [here](https://doc.paraswap.network/).
 
 ### About the Subgraph
-This subgraph dynamically tracks **all the limit order transactions** (swaps) made via Paraswap on the **BSC** chain. AugustusRFQ & AugustusRFQ-NFT swaps.
+This subgraph dynamically tracks **all the limit order transactions** (swaps) made via Paraswap on the **Avalanche** chain. AugustusRFQ & AugustusRFQ-NFT swaps.
 
 > You can query the subgraph via GraphQL from the legacy explorer [here](https://thegraph.com/hosted-service/subgraph/paraswap/augustus-rfq-subgraph).
 

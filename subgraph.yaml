@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: AugustusRFQ
-    network: bsc
+    network: avalanche
     source:
-      address: "0x8DcDfe88EF0351f27437284D0710cD65b20288bb"
+      address: "0x34302c4267d0dA0A8c65510282Cc22E9e39df51f"
       abi: AugustusRFQ
-      startBlock: 18164860
+      startBlock: 15242064
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
