@@ -6,9 +6,9 @@ dataSources:
     name: AugustusRFQ
     network: fantom
     source:
-      address: "0x2DF17455B96Dde3618FD6B1C3a9AA06D6aB89347"
+      address: "0x0927FD43a7a87E3E8b81Df2c44B03C4756849F6D"
       abi: AugustusRFQ
-      startBlock: 39169691
+      startBlock: 96752
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
