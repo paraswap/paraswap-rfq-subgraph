@@ -68,5 +68,14 @@ export function _getAssetType(asset: BigInt): BigInt {
 }
 
 export function _getAssetAddress(asset: BigInt): Bytes {
-  return Bytes.fromHexString(asset.toHex().slice(0, 42)) as Bytes;
+  let assetHex = asset.toHex();
+
+  if (assetHex.length < 42) {
+    let assetHexTrimmed = assetHex.slice(2);
+    let assetHexProcessed = '0x' + assetHexTrimmed.padStart(40, '0');
+    return Bytes.fromHexString(assetHexProcessed) as Bytes;
+  }
+  else {
+    return Bytes.fromHexString(assetHex.slice(0, 42)) as Bytes;
+  }
 }
