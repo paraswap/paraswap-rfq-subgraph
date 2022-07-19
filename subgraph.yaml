@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: AugustusRFQ
-    network: fantom
+    network: arbitrum-one
     source:
       address: "0x0927FD43a7a87E3E8b81Df2c44B03C4756849F6D"
       abi: AugustusRFQ
-      startBlock: 96752
+      startBlock: 16642419
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
