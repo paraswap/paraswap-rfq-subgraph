@@ -1,13 +1,13 @@
 {
-  "name": "paraswap-rfq-subgraph-arbitrum",
+  "name": "paraswap-rfq-subgraph-optimism",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ paraswap/paraswap-rfq-subgraph-arbitrum",
-    "create-local": "graph create --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-arbitrum",
-    "remove-local": "graph remove --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-arbitrum",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 paraswap/paraswap-rfq-subgraph-arbitrum"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ paraswap/paraswap-rfq-subgraph-optimism",
+    "create-local": "graph create --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-optimism",
+    "remove-local": "graph remove --node http://localhost:8020/ paraswap/paraswap-rfq-subgraph-optimism",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 paraswap/paraswap-rfq-subgraph-optimism"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.31.0",
