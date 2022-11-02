@@ -76,6 +76,6 @@ export function _getAssetAddress(asset: BigInt): Bytes {
     return Bytes.fromHexString(assetHexProcessed) as Bytes;
   }
   else {
-    return Bytes.fromHexString(assetHex.slice(0, 42)) as Bytes;
+    return Bytes.fromHexString('0x' + assetHex.slice(-40)) as Bytes;
   }
 }
